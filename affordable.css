@@ -1,0 +1,309 @@
+body{
+    margin-bottom: 70px;
+}
+
+.hero-section{
+  background-image: url(carton.avif) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+}
+
+
+.custom-fluid-container{
+height: 20%;
+overflow-y: auto;
+
+}
+.navbar-nav{
+    margin-right: 110px;
+    
+}
+.navbar-brand{
+    margin-left: 20px; 
+}
+.textcolor{
+    color: rgb(248, 115, 7);
+}
+.nav-item:hover{
+   
+    color: rgb(248, 115, 7);
+    border-radius: 7px;
+}
+.nav-link{
+    color: rgb(0, 0, 0);
+}
+.nav-link:hover{
+    color: rgb(248, 115, 7);
+}
+.foodtext{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+.btn{
+    border-color: transparent !important;
+}
+.btn:hover{
+    background-color:  rgb(248, 115, 7);
+    color: white;
+    border-color: none;
+}
+
+.footer-nav{
+    color: white;
+    text-decoration: none;
+}
+
+
+@media(max-width: 991px){
+  .sidebar {
+    background-color: rgba(253, 253, 253, 0.815);
+    
+  }
+}
+.navbar-toggler, .btn-close:focus{
+  box-shadow: none;
+  outline: none;
+}
+
+.order-button{
+  color: white;
+  width: 110px;
+  height: 35px;
+  background-color:rgb(248, 115, 7); 
+  text-decoration: none;
+  border-radius:10px ;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.order-button:hover{
+background-color:rgb(17, 192, 84);
+transition: 0.4s;
+color: white;
+font-weight: 500s;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.ordernow-button{
+border-style: none;
+background-color: rgb(248, 115, 7);
+border-radius: 7px;
+color: white;
+padding: 4px 14px;
+font-weight: bold;
+}
+.buynow-button{
+border-style: none;
+background-color: rgb(248, 115, 7);
+border-radius: 4px;
+color: white;
+padding: 3px 13px;
+}
+
+.ordernow-button:hover{
+  background-color: rgb(52, 122, 79) ;
+  color: white;
+  transition: 0.4s;
+}
+.buynow-button:hover{
+  background-color: rgb(52, 122, 79) ;
+  color: white;
+  transition: 0.4s;
+
+}
+
+.nav-link{
+  position: relative;
+}
+
+@media(min-width: 991px){
+.nav-link:before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: rgb(17, 192, 84);
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+
+}
+
+.nav-link:hover:before{
+  width: 100%;
+  visibility: visible;
+}
+}
+
+.content{
+  width: 100%;
+  padding: 5px 20px;
+  font-size: 20px;
+}
+
+.custom-card {
+  border: none; 
+  margin: auto; 
+  margin-top: 50px; 
+  max-width: 18rem;
+}
+/* Basic styles for the footer */
+.footer {
+    height:470px ;
+    background-color: #333;
+    color: #fff;
+    padding-left: 30px ;
+    padding-top: 30px ;
+    
+  }
+  
+  .footer h3 {
+    color: #fff;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 50px 0;
+    background-color: rgb(56, 54, 54);
+    height: 550px;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.footer .social a{
+    font-size: 25px;
+    color: white;
+    border: 2px solid var(--main-color);
+    width: 42px;
+    line-height: 42px;
+    height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--main-color);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 25px var(--main-color);
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer, ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+    
+}
+.footer a:hover{
+    border-bottom: 3px solid var(--main-color);
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 14px;   
+}
+
+.footer, .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size:14px;
+    color: white;
+}
+  /* Optional: Add font-awesome CDN link in your HTML for social icons */
+  /* styles.css */
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: #061e6bad;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+  border-radius:2px;
+  width: 40px;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #333333;
+}
+
+.moreproducts-button{
+  color: #1a8807;;
+  background-color:rgb(255, 255, 255); 
+  text-decoration: none;
+  border-radius:10px ;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px 20px; 
+  border-style: ridge;
+  border-radius: 7px; 
+  border-color: #1a8807;
+  border-width: 1px;
+  width: 170px;
+  transition: 0.3s ease-in-out;
+}
+.moreproducts-button:hover{
+  background-color:rgb(52, 122, 79);
+  transition: 0.4s;
+  color: white;
+  font-weight: 500s;
+  border: none;
+  transition: 0.3s;
+  transform: scale(1)translateY(-1px);
+  }
